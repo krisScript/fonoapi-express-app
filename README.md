@@ -1,7 +1,7 @@
 # Phone models app
 
 Phone models app build with express and styled with bulma .
-Data procided by [Fonoapi](https://fonoapi.freshpixl.com/)
+Data provided by [Fonoapi](https://fonoapi.freshpixl.com/)
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
