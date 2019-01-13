@@ -1,0 +1,35 @@
+<%- include('includes/head.ejs') %>
+</head>
+<body>
+    <%- include('includes/navigation.ejs') %>
+    <section class="section">
+        <div class="container has-text-centered">
+            <h1 class="title is-size-1">Models</h1>
+            <% if (models.length > 0) { %>
+                    <% for (let model of models) { %>
+                        <table class="table">
+                                <thead>
+                                  <tr>
+                                    <th>Info</th>
+                                    <th>Description</th>
+                             </thead>
+                             <tbody>
+                
+                             <% Object.entries(model).forEach(stat => { %>
+                               <tr>
+                                   <td><%= stat[0] %></td>
+                                   <td><%= stat[1] %></td>
+                               </tr>
+                              <% }); %>
+                             </tobdy>
+                             </table>
+                        <% } %>
+               
+                <% } else { %>
+                    <h1>No tasks Found!</h1>
+                    <% } %>
+        </div>
+        
+    </section>
+
+<%- include('includes/end.ejs') %>
